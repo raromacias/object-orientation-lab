@@ -282,7 +282,7 @@ class Wizard {
 
 //Code Here
 class Phone {
-  constructor(brand, model, storage, color, price, sold){
+  constructor(brand, model, storage, color, price){
     this.brand = brand;
     this.model = model;
     this.storage = storage;
@@ -299,10 +299,10 @@ class Phone {
 
   }
 } 
-  let phone1 = new Phone("Apple", "16s", "8GB", "red", 100);
-  phone1.sell()
-  phone1.changePrice(50)
-  console.log(phone1)
+  
+  
+  
+  
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -314,7 +314,8 @@ class Phone {
 */
 
 //Code Here
-
+let phone1 = new Phone("Apple", "16s", 8000, "red", 100);
+console.log(phone1)
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -323,8 +324,8 @@ class Phone {
 */ 
 
 //Code Here 
-
-
+phone1.changePrice(1000)
+console.log(phone1)
 /*
   Now call the sell method on one of your other phone objects
 
@@ -332,6 +333,8 @@ class Phone {
 */
 
 //Code Here 
+phone1.sell()
+console.log(phone1)
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
